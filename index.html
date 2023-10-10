@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WebShop</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <script src="https://kit.fontawesome.com/61877af9d0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <span class="icon is-large">
+                        <i class="fas fa-store fa-2x"></i>
+                    </span>
+                    <span class="hs-logo">Medical Shop</span>
+                </a>
+            </div>
+        </nav>
+        <div class="section columns">
+            <div class="column">
+                <div class="js-product-list tile is-ancestor">
+                    <div class="js-product tile is-4 is-parent">
+                        <div class="card tile is-child">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img class="js-product-image" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p class="js-product-name title is-4">Product Name</p>
+                                    <p class="js-product-category subtitle is-6">Category</p>
+                                    <p class="js-product-description">
+                                        Product description. Just a couple of sentences.
+                                    </p>
+                                </div>
+                                <footer class="level">
+                                    <div class="level-left">
+                                        <div class="js-product-price level-item title is-4">
+                                            €0
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <button class="js-product-button level-item button is-danger">
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-2">
+                <div class="box">
+                    <h2 class="title is-6">
+                        <span class="icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                        Cart
+                    </h2>
+                    <table class="js-cart table is-size-7 is-fullwidth">
+                        <tr>
+                            <td>Your cart is empty</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <script src="pubsub.js"></script>
+            <script src="product.js"></script>
+            <script src="cart.js"></script>
+            <script src="script.js"></script>
+        </body>
+    </html>
